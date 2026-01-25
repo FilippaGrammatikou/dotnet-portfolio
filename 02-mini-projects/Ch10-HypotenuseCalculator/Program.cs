@@ -8,11 +8,20 @@
       a = 3, b = 4  =>  c = 5 */
 
 namespace Ch10_HypotenuseCalculator;
-public static class Ch10_HypotenuseCalculator
+
+public static class Prorgam
 {
-    public static void Run()
+    public static void Main()
     {
-     
+
+        Console.WriteLine("Please Enter Side A: ");
+        double a = Convert.ToDouble(Console.ReadLine());
+
+        Console.WriteLine("Please Enter Side B: ");
+        double b = Convert.ToDouble(Console.ReadLine());
+
+        double c = Math.Sqrt((a * a) + (b * b));
+        Console.WriteLine(" The Hypotenuse is: " + c);
 
         Console.ReadKey();
     }
