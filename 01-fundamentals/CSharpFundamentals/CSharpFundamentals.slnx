@@ -1,4 +1,5 @@
 <Solution>
   <Project Path="../../02-mini-projects/Ch18-NumberGuessingGame/Ch18-NumberGuessingGame.csproj" Id="5bc2d65c-74f9-4efc-ac90-d29002657509" />
+  <Project Path="../../02-mini-projects/Ch19_RockPaperScissorsProgram/Ch19_RockPaperScissorsProgram.csproj" Id="60f31eb8-6a63-41c2-9ffb-24dba106c832" />
   <Project Path="CSharpFundamentals.csproj" />
 </Solution>
