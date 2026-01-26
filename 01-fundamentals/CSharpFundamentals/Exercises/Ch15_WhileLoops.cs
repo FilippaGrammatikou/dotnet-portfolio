@@ -1,11 +1,37 @@
-﻿namespace CSharpFundamentals.Exercises;
+﻿using System.Xml.Linq;
+
+namespace CSharpFundamentals.Exercises;
 
 public static class Ch15_WhileLoops
 {
     public static void Run()
     {
-        // Bro Code chapter 15: WhileLoops
-        // 1) Copy the tutorial examples here.
-        // 2) Add ONE mutation (your own variation) to prove understanding.
+        // Chapter 15: WhileLoops
+        // repeats some code while so condition remains true
+
+        Console.Write("Please enter your name: ");
+        String name = Console.ReadLine();
+
+        while (name == ""){  // or while(name == null){
+            Console.Write("Please enter a non-blank name: ");
+            name = Console.ReadLine();
+        }
+
+        Console.WriteLine("Hello, " + name +"!");
+        Console.ReadKey();
     }
 }
+
+
+// OR EVEN BETTER
+
+
+/*    String name = "";
+
+        while (name == ""){ 
+            Console.Write("Please enter your name: ");
+            name = Console.ReadLine();
+        }
+
+        Console.WriteLine("Hello, " + name + "!");
+Console.ReadKey(); */
