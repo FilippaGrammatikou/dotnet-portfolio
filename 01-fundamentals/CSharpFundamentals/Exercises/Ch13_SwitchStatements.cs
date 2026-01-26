@@ -41,3 +41,29 @@ public static class Ch13_SwitchStatements
         Console.ReadKey();
     }
 }
+
+
+// More efficient way
+
+/* while (true)
+{
+    Console.WriteLine("What day is it today?");
+    string day = Console.ReadLine()?.Trim().ToLower();
+
+    switch (day)
+    {
+        case "monday":
+        case "tuesday":
+        case "wednesday":
+        case "thursday":
+        case "friday":
+        case "saturday":
+        case "sunday":
+            Console.WriteLine($"The day you entered is: {day}");
+            return; // exits Run()
+        default:
+            Console.WriteLine("Invalid input, try again.");
+            break;
+    }
+}
+*/
