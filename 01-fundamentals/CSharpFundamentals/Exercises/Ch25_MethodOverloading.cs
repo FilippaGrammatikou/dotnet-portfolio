@@ -4,8 +4,20 @@ public static class Ch25_MethodOverloading
 {
     public static void Run()
     {
-        // Bro Code chapter 25: MethodOverloading
-        // 1) Copy the tutorial examples here.
-        // 2) Add ONE mutation (your own variation) to prove understanding.
+        // Chapter 25: MethodOverloading
+        // methods share same name, but different parameters
+        //name + parameters = signature
+        // methods must have a unique signature
+
+        double total;
+
+        total = Multiply(2, 3);
+
+        Console.WriteLine(total);
+        Console.ReadLine();
     }
+
+    static double Multiply (double a, double b){
+        return a* b;
+        }
 }
