@@ -4,8 +4,21 @@ public static class Ch23_Methods
 {
     public static void Run()
     {
-        // Bro Code chapter 23: Methods
-        // 1) Copy the tutorial examples here.
-        // 2) Add ONE mutation (your own variation) to prove understanding.
+        // Chapter 23: Methods
+        // performs a selection of codel, whenever it's called "invoked"
+        // benefit = let's us reuse code w/o writing it multiple times
+
+        singHappyBirthday();
+        singHappyBirthday();
+        singHappyBirthday();
+
+        Console.ReadKey();
     }
+        static void singHappyBirthday(){
+            Console.WriteLine("Happy birthday to you!");
+            Console.WriteLine("Happy birthday to you!");
+            Console.WriteLine("Happy birthday dear YOU");
+            Console.WriteLine("Happy birthday to you!");
+            Console.WriteLine();
+        }
 }
