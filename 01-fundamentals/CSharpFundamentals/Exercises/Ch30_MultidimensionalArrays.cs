@@ -28,7 +28,7 @@ public static class Ch30_MultidimensionalArrays
         {
             for(int j=0; j < parkingLot.GetLength(1); j++) // 1 so that this represents the second dimension
             {
-                Console.WriteLine(parkingLot[i,j] + " ");
+                Console.Write(parkingLot[i,j] + " ");
             }
             Console.WriteLine();
         }
