@@ -11,7 +11,7 @@ public static class Ch26_ParamsKeyword
         // A method parameter that takes a variable number of arguments
         // The parameter type must be a single dimensional array
 
-        double total = CheckOut(3.60, 2.64, 67.33, 15);
+        double total = CheckOut(3.60, 2.64, 67.33, 15, 10.25);
 
         Console.WriteLine(total);
         Console.ReadKey();
