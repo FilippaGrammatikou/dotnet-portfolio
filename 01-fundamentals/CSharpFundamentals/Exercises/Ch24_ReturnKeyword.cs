@@ -24,7 +24,7 @@ public static class Ch24_ReturnKeyword
         Console.ReadKey();
         }
 
-    static double Multiply(double x, double y)
+    static double Multiply(double x, double y) // because what we are returning is a double, we need to declare that next to static
     {
         double z = x * y;
         return z;
