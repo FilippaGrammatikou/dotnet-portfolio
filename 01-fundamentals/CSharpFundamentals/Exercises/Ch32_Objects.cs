@@ -4,8 +4,13 @@ public static class Ch32_Objects
 {
     public static void Run()
     {
-        // Bro Code chapter 32: Objects
-        // 1) Copy the tutorial examples here.
-        // 2) Add ONE mutation (your own variation) to prove understanding.
+        // Chapter 32: Objects
+        //an instance of a class.
+        // a class can be used as a blueprint to create objects (oop)
+        // objects can have fields and methods (characteristics and actions)
+
+
+
+        Console.ReadKey();
     }
 }
