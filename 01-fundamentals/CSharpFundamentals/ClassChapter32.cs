@@ -1,11 +1,22 @@
-﻿/*using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace CSharpFundamentals
 {
-    static class ClassChapter32
+    class Human
     {
-        public static void 
+        public String name; //not safe to make these public but just for learning porpuses
+        public int age;
+
+        public void Eat()
+        {
+            Console.WriteLine(name + " is eating.");
+        }
+        public void Sleeping()
+        {
+            Console.WriteLine(name + " is sleeping.");
+        }
+
     }
-}*/
+}
