@@ -26,7 +26,7 @@ public static class Ch36_Inheritance
         Console.ReadKey(); 
     }
 
-    class Vehicle
+    class Vehicle // parent class
     {
         public int speed = 0;
 
@@ -35,7 +35,7 @@ public static class Ch36_Inheritance
             Console.WriteLine("This vehicle is moving");
         }
     }
-    class Car : Vehicle
+    class Car : Vehicle // child class has access to the parent's methods and fields
     {
         public int wheels = 4;
     }
