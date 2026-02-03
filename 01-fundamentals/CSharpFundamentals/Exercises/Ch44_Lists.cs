@@ -37,7 +37,7 @@ public static class Ch44_Lists
         // food.Sort();
         // food.Reverse();
         // food.Clear();
-        // String[] foodArray = food.ToArray();
+        // String[] foodArray = food.ToArray(); // declaring a new array
         
         foreach (String item in food)
         {
