@@ -10,13 +10,13 @@ public static class Ch45_ListOfObjects
         // Chapter 45: ListOfObjects
 
         List<Player> players = new List<Player>();
-        Player player1 = new Player("Chad");
+        /*Player player1 = new Player("Chad");
         Player player2 = new Player("Dean");
-        Player player3 = new Player("Larry");
+        Player player3 = new Player("Larry"); */
 
-        players.Add(player1);
-        players.Add(player2);
-        players.Add(player3);
+        players.Add(new Player("Chad"));
+        players.Add(new Player("Dean"));
+        players.Add(new Player("Larry"));
 
         foreach (Player player in players)
         {
