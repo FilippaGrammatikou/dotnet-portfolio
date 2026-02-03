@@ -27,7 +27,7 @@ public static class Ch46_GettersAndSetters
         private int speed; //field but if we turned it to private, we would lose access
         public Car(int speed)
         {
-            speed = speed;
+            Speed = speed;
         }
 
         public int Speed //property
@@ -41,9 +41,8 @@ public static class Ch46_GettersAndSetters
                 }
                 else
                 {
-                    speed = value;
-                }
                     speed = value; // value is like a parameter. when assigning a value to speed, that value is =value;
+                }
             }
         }
     }
