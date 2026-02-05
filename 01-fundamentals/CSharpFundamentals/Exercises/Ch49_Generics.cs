@@ -40,6 +40,8 @@ public static class Ch49_Generics
             Console.WriteLine(item + " ");
         }
     }*/
+
+    //Instead of doing all of hte above to satisfy each possible change of data type, we can just use <T> Generics instead
     public static void displayElements<Thing>(Thing[] array)
     {
         foreach (Thing item in array)
