@@ -13,4 +13,8 @@
     <None Remove="Excercises\**" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="LINQ\" />
+  </ItemGroup>
+
 </Project>
