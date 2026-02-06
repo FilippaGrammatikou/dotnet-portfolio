@@ -4,7 +4,7 @@ using System.Text;
 
 namespace CSharpFundamentals.LINQ
 {
-    internal class Ch01_MethodBasedSyntax
+    internal class Ch54_ThenByOperator
     {
     }
 }
