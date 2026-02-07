@@ -15,9 +15,9 @@ public static class Ch46_GettersAndSetters
         // value keyword = defines the value being assigned by the set (parameter)
 
         Car car = new Car(400); //because public Car(int speed), therefore new Car(400 -> speed field)
-        car.carSpeed = 1000000000; //accessing the property instead of the field
+        car.Speed = 1000000000; //accessing the property instead of the field
 
-        Console.WriteLine(car.carSpeed); //accessing the property instead of the field if speed is written with a capital S
+        Console.WriteLine(car.Speed); //accessing the property instead of the field if speed is written with a capital S
 
         Console.ReadKey();
     }
@@ -27,10 +27,10 @@ public static class Ch46_GettersAndSetters
         private int speed; //field but if we turned it to private, we would lose access
         public Car(int speed)
         {
-            carSpeed = speed;
+            Speed = speed;
         }
 
-        public int carSpeed //property
+        public int Speed //property
         {
             get { return speed; }  //read whatever values are within the field
             set // for this to be writable, we need set // writable
