@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace CSharpFundamentals
+namespace CSharpFundamentals.ChapterSupport
 {
     static class ClassChapter31
     {

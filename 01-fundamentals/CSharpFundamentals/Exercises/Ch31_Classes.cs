@@ -1,4 +1,6 @@
-﻿namespace CSharpFundamentals.Exercises;
+﻿using CSharpFundamentals.ChapterSupport;
+
+namespace CSharpFundamentals.Exercises;
 
 public static class Ch31_Classes
 {
