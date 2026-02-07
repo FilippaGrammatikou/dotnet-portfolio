@@ -36,8 +36,6 @@ public static class Ch52_WhereOperator
             Console.WriteLine($"{item.Name} - {item.Author}");
         }*/
 
-
-
         Console.ReadKey();
         }
 }
