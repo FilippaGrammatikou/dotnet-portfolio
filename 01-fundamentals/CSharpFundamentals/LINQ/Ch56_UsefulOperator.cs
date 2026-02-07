@@ -2,9 +2,15 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace CSharpFundamentals.LINQ
-{
-    internal class Ch56_UsefulOperator
+namespace CSharpFundamentals.LINQ;
+
+public static class Ch56_UsefulOperator
     {
+    public static void Run()
+    {
+
+
+
     }
 }
+

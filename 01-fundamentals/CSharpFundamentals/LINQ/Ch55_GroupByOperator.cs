@@ -2,9 +2,15 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace CSharpFundamentals.LINQ
-{
-    internal class Ch55_GroupByOperator
+namespace CSharpFundamentals.LINQ;
+
+public static class Ch55_GroupByOperator
     {
+    public static void Run()
+    {
+
+
+
     }
 }
+

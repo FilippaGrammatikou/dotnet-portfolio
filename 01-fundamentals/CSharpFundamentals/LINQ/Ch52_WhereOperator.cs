@@ -2,9 +2,14 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace CSharpFundamentals.LINQ
-{
-    internal class Ch52_WhereOperator
+namespace CSharpFundamentals.LINQ;
+
+public static class Ch52_WhereOperator
     {
+    public static void Run()
+    {
+
+
+
     }
 }

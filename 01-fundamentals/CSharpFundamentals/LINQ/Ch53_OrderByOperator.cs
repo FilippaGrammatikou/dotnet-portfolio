@@ -2,9 +2,14 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace CSharpFundamentals.LINQ
-{
-    internal class Ch53_OrderByOperator
+namespace CSharpFundamentals.LINQ;
+
+public static class Ch53_OrderByOperator
     {
+    public static void Run()
+    {
+
+
+
     }
 }
