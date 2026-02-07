@@ -11,7 +11,7 @@ public static class Ch51_SelectOperator
 {
     public static void Run()
     {
-        // Chapter 51: NestedLoops
+        // Chapter 51: SelectOperator
         // Language Integrated Query || 2 syntaxes: Method Based & Query Based
         // LINQ applications: linq to Objects(collections, files,Strings,etc)
         //                                 linq to entities(entity framework)
