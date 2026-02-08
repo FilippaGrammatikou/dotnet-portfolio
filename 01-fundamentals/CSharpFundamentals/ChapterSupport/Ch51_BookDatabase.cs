@@ -6,7 +6,7 @@ namespace CSharpFundamentals.ChapterSupport
 {
     public class Ch51_BookDatabase
     {
-        public static IEnumerable<Ch51_Book> GetBooksData()
+        public static IEnumerable<Ch51_Book> GetBooksData()  //method that RETURNS(actionj) new list
         {
             return new List<Ch51_Book>
             {
