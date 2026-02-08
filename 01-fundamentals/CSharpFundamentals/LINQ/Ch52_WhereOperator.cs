@@ -11,7 +11,7 @@ public static class Ch52_WhereOperator
     {
     public static void Run()
     {
-        // Chapter 51: WhereOperator
+        // Chapter 52: WhereOperator
         // Used for filtering data from a set of data
         // eg:  var cheapBooks = books.Where(b=>b.Price<100); or var cheapBooks = from b in books where b.Price <100 select b;
 
