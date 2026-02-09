@@ -19,12 +19,11 @@ public static class Ch53_OrderByOperator
         // var booksCostWise = from b in books orderby b.Price descending select b;
 
         var books = Ch51_BookDatabase.GetBooksData();// import book data
-        var data = books.OrderBy(b=>(price: b.Price), (author: b.Author)).ToList;
-
-        data.ForEach(b => Console.WriteLine($"{b.price}-{b.author}"));
-        
-
-
-
-    }
+        var data = books.OrderBy(b => (b.Price)); //ascending
+                     
+        foreach(var entry in data)
+        {
+            Console.WriteLine($"{entry.Name} - {entry.Price}");
+        }
+     }
 }
