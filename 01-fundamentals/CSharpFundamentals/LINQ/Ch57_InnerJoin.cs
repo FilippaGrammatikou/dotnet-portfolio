@@ -23,7 +23,8 @@ public static class Ch57_InnerJoin
         // - Cross Join
 
         //git comment
-
+        //preparation for Ticket Work
+        Console.ReadKey();
 
     }
 }
