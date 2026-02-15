@@ -1,0 +1,22 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+using System.Linq;
+
+namespace LINQ_TicketProgram
+{
+    internal class Ticket
+    {
+        public int Id { get; set; }
+        public String Name { get; set; }
+        public String Status { get; set; }
+        public DateTime dOC { get; set; }
+        public Ticket(int id, string name, string status, DateTime CreatedAt)
+        {
+            Id = id;
+            Name = name;
+            Status = status;
+            dOC = CreatedAt;
+        }
+    }
+}
