@@ -11,5 +11,17 @@ public static class Program
     {
         var tickets = Ticket_DB.GetTicketData();
 
+        var openTickets = tickets.Where(t => t.Status == "Open").ToList();
+
+        Console.WriteLine("The current Open tickets are: ");
+        Console.WriteLine($"COUNT: {openTickets.Count}");
+        Console.WriteLine();
+
+        foreach (var ticket in openTickets)
+        {
+            Console.WriteLine($"{ticket.Id}: {ticket.Name}");
+        }
+
+        Console.ReadKey();
     }
 }
