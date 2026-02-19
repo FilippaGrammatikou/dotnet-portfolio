@@ -5,13 +5,17 @@ using System.Linq;
 
 namespace LINQ_TicketProgram
 {
+    internal enum TicketStatus
+    {
+        Open, Ongoing, Closed
+    }
     internal class Ticket
     {
         public int Id { get; set; }
         public String Name { get; set; }
-        public String Status { get; set; }
+        public TicketStatus Status { get; set; }
         public DateTime dOC { get; set; }
-        public Ticket(int id, string name, string status, DateTime CreatedAt)
+        public Ticket(int id, string name, TicketStatus status, DateTime CreatedAt)
         {
             Id = id;
             Name = name;
