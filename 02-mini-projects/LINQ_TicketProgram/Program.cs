@@ -44,7 +44,32 @@ public static class Program
         {
             Console.WriteLine($"{ticket.Id}, {ticket.AgeDays} days ago, {ticket.Name}");
         }
+        Console.WriteLine();
+        Console.WriteLine();
+
+        //Existing or Missing tickets check
+        /* var maybeTicket = FindById(tickets, 999);
+        if (maybeTicket != null)
+        {
+            Console.WriteLine($"Find maybeTicket: FOUND #{maybeTicket.Id} - {maybeTicket.Name}");
+        }
+        else
+        {
+            Console.WriteLine("Find maybeTicket: NOT FOUND");
+        }*/
+
+        //Better coding practice
+        var ticketLookup = FindById(tickets, 999);
+        Console.WriteLine( ticketLookup != null
+            ? $"Find Ticket: FOUND #{ticketLookup.Id} - {ticketLookup.Name}" 
+            : "Find Ticket:  NOT FOUND");
 
         Console.ReadKey();
+    }
+
+    //FirstOrDefault
+    static Ticket? FindById(List<Ticket> tickets, int id)
+    {
+        return tickets.FirstOrDefault(t => t.Id == id);
     }
 }
