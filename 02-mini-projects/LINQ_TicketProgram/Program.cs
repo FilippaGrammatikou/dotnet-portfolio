@@ -67,7 +67,6 @@ public static class Program
         Console.WriteLine();
 
         //Query: tickets of the last 7 days
-
         var recentTickets = tickets
             .Where(t => t.dOC >= DateTime.Today.AddDays(-7))
             .ToList();
@@ -76,6 +75,20 @@ public static class Program
         foreach(var ticket in recentTickets)
         {
             Console.WriteLine($"#{ticket.Id} {ticket.dOC: dd/MM/yyyy} {ticket.Status} - {ticket.Name}");
+        }
+        Console.WriteLine();
+        Console.WriteLine();
+
+        //Query: Group By Status and print counts
+        var countsByStatus = tickets
+            .GroupBy(t => t.Status)
+            .Select(g => new {Status = g.Key, Count = g.Count() })
+            .ToList();
+
+        Console.WriteLine("Count by Status: ");
+        foreach (var ticket in countsByStatus)
+        {
+            Console.WriteLine($"#{ticket.Status}: ({ticket.Count})");
         }
 
         Console.ReadKey();
