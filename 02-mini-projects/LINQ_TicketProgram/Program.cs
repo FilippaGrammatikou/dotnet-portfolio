@@ -42,7 +42,7 @@ public static class Program
         Console.WriteLine("Summaries(DOC descending based): ");
         foreach (var ticket in ticketSummary)
         {
-            Console.WriteLine($"{ticket.Id}, {ticket.AgeDays} days ago, {ticket.Name}");
+            Console.WriteLine($"#{ticket.Id} - {ticket.AgeDays} Days Ago - {ticket.Name}");
         }
         Console.WriteLine();
         Console.WriteLine();
@@ -63,6 +63,20 @@ public static class Program
         Console.WriteLine( ticketLookup != null
             ? $"Find Ticket: FOUND #{ticketLookup.Id} - {ticketLookup.Name}" 
             : "Find Ticket:  NOT FOUND");
+        Console.WriteLine();
+        Console.WriteLine();
+
+        //Query: tickets of the last 7 days
+
+        var recentTickets = tickets
+            .Where(t => t.dOC >= DateTime.Today.AddDays(-7))
+            .ToList();
+
+        Console.WriteLine("Recent Tickets (Last 7 Days): ");
+        foreach(var ticket in recentTickets)
+        {
+            Console.WriteLine($"#{ticket.Id} {ticket.dOC: dd/MM/yyyy} {ticket.Status} - {ticket.Name}");
+        }
 
         Console.ReadKey();
     }
