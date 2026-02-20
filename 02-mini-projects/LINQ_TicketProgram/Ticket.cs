@@ -5,10 +5,6 @@ using System.Linq;
 
 namespace LINQ_TicketProgram
 {
-    internal enum TicketStatus
-    {
-        Open, Ongoing, Closed
-    }
     internal class Ticket
     {
         public int Id { get; set; }
