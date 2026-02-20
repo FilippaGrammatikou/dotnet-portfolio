@@ -12,6 +12,7 @@ public static class Program
         var tickets = Ticket_DB.GetTicketData();
 
         var openTickets = tickets.Where(t => t.Status == TicketStatus.Open).ToList();
+
         Console.WriteLine("The current Open tickets are: ");
         Console.WriteLine($"COUNT: {openTickets.Count}");
         Console.WriteLine();
@@ -25,6 +26,7 @@ public static class Program
 
         //Order latest tickets by descending order
         var latestFirst = tickets.OrderByDescending(t => t.dOC);
+
         Console.WriteLine("The top 3 latest tickets are: ");
         Console.WriteLine();
 
@@ -39,6 +41,7 @@ public static class Program
         var ticketSummary = tickets
             .Select(t => (Id: t.Id, Name: t.Name, AgeDays: (DateTime.Today - t.dOC).Days))
             .OrderByDescending(x => x.AgeDays).ToList();
+
         Console.WriteLine("Summaries(DOC descending based): ");
         foreach (var ticket in ticketSummary)
         {
