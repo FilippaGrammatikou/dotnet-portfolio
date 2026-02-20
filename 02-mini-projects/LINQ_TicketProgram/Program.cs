@@ -11,6 +11,7 @@ public static class Program
     {
         var tickets = Ticket_DB.GetTicketData();
 
+        // Show results based on Open Status Ticket using Enum TicketStatus
         var openTickets = tickets.Where(t => t.Status == TicketStatus.Open).ToList();
 
         Console.WriteLine("The current Open tickets are: ");
