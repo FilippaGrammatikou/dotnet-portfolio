@@ -23,7 +23,7 @@ public static class Program
         Console.WriteLine();
         Console.WriteLine();
 
-        //New print result
+        //Order latest tickets by descending order
         var latestFirst = tickets.OrderByDescending(t => t.dOC);
         Console.WriteLine("The top 3 latest tickets are: ");
         Console.WriteLine();
