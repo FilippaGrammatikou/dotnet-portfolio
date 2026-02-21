@@ -6,5 +6,11 @@ namespace CSharpFundamentals.Debugging
 {
     internal class Ch65_DefensiveProgramming_GuardClauses
     {
+        public static void Run()
+        {
+
+
+            Console.ReadKey();
+        }
     }
 }

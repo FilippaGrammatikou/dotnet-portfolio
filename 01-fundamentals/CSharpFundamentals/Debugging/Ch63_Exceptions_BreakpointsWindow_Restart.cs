@@ -6,5 +6,11 @@ namespace CSharpFundamentals.Debugging
 {
     internal class Ch63_Exceptions_BreakpointsWindow_Restart
     {
+        public static void Run()
+        {
+
+
+            Console.ReadKey();
+        }
     }
 }

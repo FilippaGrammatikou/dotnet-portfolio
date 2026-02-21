@@ -6,5 +6,11 @@ namespace CSharpFundamentals.Debugging
 {
     internal class Ch66_CallStack_Navigation
     {
+        public static void Run()
+        {
+
+
+            Console.ReadKey();
+        }
     }
 }

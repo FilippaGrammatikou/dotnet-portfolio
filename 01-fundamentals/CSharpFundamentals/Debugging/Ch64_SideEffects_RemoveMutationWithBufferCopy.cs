@@ -6,5 +6,11 @@ namespace CSharpFundamentals.Debugging
 {
     internal class Ch64_SideEffects_RemoveMutationWithBufferCopy
     {
+        public static void Run()
+        {
+
+
+            Console.ReadKey();
+        }
     }
 }

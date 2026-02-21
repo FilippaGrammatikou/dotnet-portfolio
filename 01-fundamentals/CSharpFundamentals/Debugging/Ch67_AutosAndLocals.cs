@@ -6,5 +6,11 @@ namespace CSharpFundamentals.Debugging
 {
     internal class Ch67_AutosAndLocals
     {
+        public static void Run()
+        {
+
+
+            Console.ReadKey();
+        }
     }
 }

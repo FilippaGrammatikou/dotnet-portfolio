@@ -6,5 +6,11 @@ namespace CSharpFundamentals.Debugging
 {
     internal class Ch62_WatchWindow_MinAndIndexes
     {
+        public static void Run()
+        {
+
+
+            Console.ReadKey();
+        }
     }
 }

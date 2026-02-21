@@ -6,5 +6,11 @@ namespace CSharpFundamentals.Debugging
 {
     internal class Ch61_BreakpointsAndStepping
     {
+        public static void Run()
+        {
+
+
+            Console.ReadKey();
+        }
     }
 }
