@@ -1,8 +1,9 @@
 ﻿using System;
 using CSharpFundamentals.Exercises;
+using CSharpFundamentals.Debugging;
 using CSharpFundamentals.LINQ;
 
-Console.Write("Chapter number (1–59): ");
+Console.Write("Chapter number (1-67): ");
 var input = Console.ReadLine();
 
 if (int.TryParse(input, out var id))
@@ -14,6 +15,10 @@ if (int.TryParse(input, out var id))
     else if (id >= 51 && id <= 59)
     {
         LinqTopics.Run(id);      // LINQ (51–59)
+    }
+    else if(id >= 60 && id <= 67)
+    {
+        DebugTopics.Run(id);
     }
     else
     {
