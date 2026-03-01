@@ -64,7 +64,7 @@ namespace CSharpFundamentals.Debugging
         public static void Run(string[] args)
         {
             {
-                var numbers = new List<int> { 8, 9, 10, 11, 12, 13 };
+                var numbers = new List<int> { 1, 2, 3, 4, 5, 6 };
                 var smallests = GetSmallests(numbers, 3);
 
                 foreach (var number in smallests)
