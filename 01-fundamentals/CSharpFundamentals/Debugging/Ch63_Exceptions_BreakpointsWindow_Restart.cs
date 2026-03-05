@@ -45,9 +45,9 @@ namespace CSharpFundamentals.Debugging
     public static int GetSmallest(List<int> list)
     {
         
-        var min = list[0];
+        var min = list[0]; //failure point
 
-        for (var i = 1; i < list.Count; i++)
+            for (var i = 1; i < list.Count; i++)
         {
             if (list[i] < min) 
                 min = list[i];
