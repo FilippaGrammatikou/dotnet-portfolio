@@ -18,7 +18,8 @@ namespace CSharpFundamentals.Debugging
     {
         public static void Run()
         {
-            var numbers = new List<int> { 1, 2 }; //reduce the list to 2 numbers on porpuse. It will cause an "OUT OF RANGE" Exception
+            var numbers = new List<int> { 1, 2 }; // "OUT OF RANGE" Exception on porpuse to create a side effect 
+            // We temporarily used all 6 digits while creating the buffer and replacing list with it(and in smallests with numbers)
             var smallests = GetSmallests(numbers, 3);
 
             foreach (var number in smallests)
@@ -27,15 +28,16 @@ namespace CSharpFundamentals.Debugging
             Console.ReadLine();
         }
 
-        public static List<int> GetSmallests(List<int> list, int count)
+        public static List<int> GetSmallests(List<int> list, int count) //list will cause side effects
         {
+            var buffer = new List<int>(list); //BUFFER for solving side effect
             var smallests = new List<int>();
 
             while (smallests.Count < count)
             {
-                var minim = GetSmallest(list);
+                var minim = GetSmallest(buffer); //replace lsit with buffer
                 smallests.Add(minim);
-                list.Remove(minim);
+                buffer.Remove(minim); //replace list with buffer
             }
             return smallests;
         }
