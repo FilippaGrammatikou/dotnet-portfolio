@@ -21,7 +21,7 @@ namespace BookReviewApp.DATA
             modelBuilder.Entity<BookAuthor>()
                 .HasKey(ba => new { ba.BookId, ba.AuthorId });
             modelBuilder.Entity<BookCategory>()
-                .HasKey(bc => new { bc.BookId, bc.Category });
+                .HasKey(bc => new { bc.BookId, bc.CategoryId });
 
             base.OnModelCreating(modelBuilder);
         }
