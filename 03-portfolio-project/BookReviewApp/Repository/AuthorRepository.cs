@@ -4,7 +4,7 @@ using BookReviewApp.Models;
 
 namespace BookReviewApp.Repository
 {
-    public class AuthorRepository 
+    public class AuthorRepository :IAuthorRepository
     {
         private readonly DataContext _context;
         public AuthorRepository(DataContext context)
@@ -17,9 +17,16 @@ namespace BookReviewApp.Repository
             return _context.Authors.ToList();
         }
 
-        public Author GetAuthor(int authorId)
+        public Author GetAuthorById(int authorId)
         {
             return _context.Authors.Where(a => a.Id == authorId).FirstOrDefault();
+        }
+        public ICollection<Author> GetAuthorsOfBook(int bookId)
+        {
+            return _context.BookAuthors
+                .Where(ba => ba.BookId == bookId)
+                .Select(ba => ba.Author)
+                .ToList();
         }
 
         public ICollection<Book> GetBooksByAuthor(int authorId)
@@ -30,7 +37,7 @@ namespace BookReviewApp.Repository
                 .ToList();
         }
 
-        public bool AuthorsExists(int authorId)
+        public bool AuthorExists(int authorId)
         {
             return _context.Authors.Any(a => a.Id == authorId);
         }

@@ -17,6 +17,8 @@ builder.Services.AddDbContext<DataContext>(options =>
 builder.Services.AddScoped<IBookRepository, BookRepository>();
 builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
 builder.Services.AddScoped<ICountryRepository, CountryRepository>();
+builder.Services.AddScoped<IAuthorRepository, AuthorRepository>();
+
 
 builder.Services.AddOpenApi();
 
