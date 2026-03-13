@@ -27,7 +27,27 @@ namespace BookReviewApp.Repository
         }
         public bool CategoryExists(int categoryId)
         {
-            return _context.Categories.Any(c=>c.Id== categoryId);
+            return _context.Categories.Any(c => c.Id == categoryId);
+        }
+        public bool UpdateCategory(Category category)
+        {
+            _context.Categories.Update(category);
+            return Save();
+        }
+        public bool CreateCategory(Category category)
+        {
+            _context.Categories.Add(category);
+            return Save();
+        }
+        public bool DeleteCategory(Category category)
+        {
+            _context.Categories.Remove(category);
+            return Save();
+        }
+        public bool Save()
+        {
+            var saved = _context.SaveChanges();
+            return saved > 0 ? true : false;
         }
     }
 }
