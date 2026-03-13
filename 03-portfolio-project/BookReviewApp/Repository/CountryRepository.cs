@@ -34,7 +34,7 @@ namespace BookReviewApp.Repository
             return _context.Countries.Any(c => c.Id==countryId);
         }
 
-        public ICollection<Author> GetAuthorFromCountry(int countryId)
+        public ICollection<Author> GetAuthorsFromCountry(int countryId)
         {
             return _context.Authors.Where(a=>a.Country.Id==countryId).ToList();
         }
